@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8e7ec">
+<title>A little question for VEE ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+:root{--ink:#58273b;--rose:#a33255;--muted:#946578;--background:#faedf0}*{box-sizing:border-box}body{margin:0;background:var(--background);color:var(--ink);font-family:'DM Sans',sans-serif;min-height:100vh}body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 50% 48%,#fff7f8 0%,transparent 65%);pointer-events:none}.grain{position:fixed;inset:0;opacity:.13;pointer-events:none;z-index:5;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23976878' opacity='.25' filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E")}header,footer{position:relative;display:flex;justify-content:space-between;align-items:center;margin:0 6%;}header{height:96px;border-bottom:1px solid #d9b2be66}.wordmark{font-family:'Playfair Display',serif;font-size:21px;text-decoration:none;color:var(--ink)}.wordmark span{margin-left:10px;color:var(--rose)}.header-note,footer{font-size:13px;color:var(--muted)}main{position:relative;min-height:calc(100vh - 174px);display:grid;place-items:center;padding:50px 20px 45px;text-align:center}.eyebrow{font-size:11px;letter-spacing:2.5px;font-weight:600;color:var(--rose);display:flex;align-items:center;justify-content:center;gap:14px}.eyebrow span{height:1px;width:25px;background:#c18496}h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500}h1{font-size:clamp(42px,5.1vw,66px);line-height:1.14;letter-spacing:-2px;margin:23px 0 20px}em{color:var(--rose);font-weight:500}.lead{font-size:16px;line-height:1.8;color:var(--muted);margin:0}.envelope-button{display:block;background:none;border:0;position:relative;width:310px;margin:7px auto 23px;cursor:pointer;color:var(--muted);padding:0}.envelope{width:100%;height:215px;transition:transform .35s}.envelope-button:hover .envelope{transform:rotate(-4deg) translateY(-5px)}.floating-heart{position:absolute;font-family:Georgia,serif;font-size:45px;left:-20px;top:80px;color:#b65f7c;transform:rotate(-15deg)}.heart-two{left:auto;right:-5px;top:130px;font-size:32px}.open-caption{display:block;font-size:12px;font-style:italic;margin-top:-8px}.primary,.secondary{border:0;border-radius:7px;padding:16px 28px;font:500 14px 'DM Sans',sans-serif;cursor:pointer;transition:transform .2s,background .2s}.primary{background:var(--rose);color:#fff5f7;box-shadow:0 6px 15px #a3325518}.primary span{margin-left:20px;font-size:20px;line-height:12px}.primary:hover{background:#86223f;transform:translateY(-2px)}button:focus-visible,a:focus-visible{outline:3px solid #bc718a;outline-offset:6px}.small-note{font-size:12px;color:var(--muted);margin-top:19px}.hidden{display:none!important}section{animation:appear .6s ease both}footer{height:78px;border-top:1px solid #d9b2be66}footer b{font-size:19px;margin-left:5px;font-weight:400}.letter{width:min(100%,570px)}.letter-paper{background:#fffafb;margin-top:25px;padding:35px 35px 30px;border:1px solid #ead0d8;box-shadow:0 12px 40px #8d3d5810;position:relative;transform:rotate(-.7deg)}.paper-heart{font-size:36px;color:var(--rose)}.salutation{font-size:14px;color:var(--muted);margin:12px 0 17px}h2{font-size:clamp(42px,6vw,60px);line-height:1.15;letter-spacing:-1.5px;margin:0 0 20px}.letter-copy{color:var(--muted);line-height:1.85;font-size:15px}.date-details{display:flex;justify-content:center;gap:25px;border-block:1px solid #ecd8df;padding:18px 0;margin:25px 0;font-size:12px;color:var(--rose)}.answers{display:flex;gap:10px;justify-content:center}.secondary{background:#f5e6eb;color:var(--rose)}.secondary:hover{background:#ecd1db}.response-note{font-size:12px;line-height:1.6;color:var(--muted);min-height:20px}.signature{display:block;text-align:right;font-family:'Playfair Display',serif;font-style:italic;font-size:15px;line-height:1.6;color:var(--muted);margin-top:24px}.signature b{font-weight:500;color:var(--rose)}.text-button{background:none;border:0;color:var(--muted);text-decoration:underline;text-underline-offset:4px;font-size:12px;padding:20px;cursor:pointer}.big-heart{font-family:Georgia,serif;font-size:90px;color:var(--rose);line-height:1.2;animation:pulse 2s infinite}.celebration .eyebrow{margin:20px 0}.celebration h2{font-size:70px}.ticket{position:relative;margin:30px auto;background:#fffafb;border:1px solid #e6c1ce;width:min(320px,85vw);padding:25px 25px 18px;border-radius:10px;transform:rotate(-3deg);box-shadow:0 10px 25px #8739500c}.ticket-label{font-size:10px;letter-spacing:3px;color:var(--rose)}.ticket h3{font-size:40px;margin:12px 0 8px}.ticket p{font-size:14px;color:var(--muted)}.ticket-bottom{border-top:1px dashed #d8a4b5;margin-top:25px;padding-top:17px;font-size:9px;letter-spacing:1px;display:flex;align-items:center;justify-content:space-between}.ticket-bottom span{font-size:24px}.next-step{font-size:14px;color:var(--muted);margin-bottom:22px}.celebration .text-button{display:block;margin:auto}.confetti{position:fixed;top:-30px;z-index:10;pointer-events:none;animation:fall linear forwards;color:var(--rose)}@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{50%{transform:scale(1.08)}}@keyframes fall{to{transform:translateY(110vh) rotate(380deg);opacity:0}}@media(max-width:600px){header{height:76px}.header-note{display:none}main{padding:40px 18px;min-height:calc(100svh - 146px)}footer{height:70px;font-size:10px}.wordmark{font-size:19px}h1{letter-spacing:-1.5px}.envelope-button{width:275px}.envelope{height:198px}.letter-paper{padding:27px 19px}.answers{flex-direction:column}.date-details{gap:12px;font-size:11px}.eyebrow{font-size:9px;letter-spacing:2px}.celebration h2{font-size:60px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+.plans{width:min(100%,680px)}.plans h2{margin-top:22px}.plan-options{border:0;padding:0;margin:30px 0 24px;display:grid;gap:13px;text-align:left}.plan-card{position:relative;display:flex;align-items:center;gap:18px;padding:22px;background:#fffafb;border:1px solid #e7cbd5;border-radius:12px;cursor:pointer;transition:background .2s,border-color .2s}.plan-card:hover{border-color:#bb6e88}.plan-card:has(input:checked){border-color:var(--rose);background:#f8dfe8;box-shadow:0 0 0 1px var(--rose)}.plan-card:focus-within{outline:3px solid #bc718a;outline-offset:3px}.plan-card input{position:absolute;opacity:0;width:1px;height:1px}.plan-icon{font-size:32px;color:var(--rose);width:35px;flex-shrink:0;text-align:center}.plan-content{display:grid;gap:8px}.plan-content strong{font-family:'Playfair Display',Georgia,serif;font-size:21px;font-weight:500}.plan-content>span{font-size:13px;line-height:1.6;color:var(--muted)}.plan-content .itinerary{color:var(--rose);font-weight:600;font-size:12px}.choice-mark{margin-left:auto;font-size:24px;color:#c79aaa}.plan-card:has(input:checked) .choice-mark{color:var(--rose)}.opinion-label{display:block;text-align:left;font-size:14px;margin-bottom:12px}.opinion-label span{font-size:12px;color:var(--muted)}textarea{display:block;resize:vertical;width:100%;border:1px solid #dfbdc9;border-radius:8px;background:#fffafb;padding:15px;font:14px/1.7 'DM Sans',sans-serif;color:var(--ink);margin-bottom:23px}textarea:focus-visible{outline:2px solid var(--rose);outline-offset:3px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.chosen-opinion{white-space:pre-wrap;overflow-wrap:anywhere}.ticket p{line-height:1.7}.ticket p:empty{display:none}@media(max-width:600px){.plan-card{padding:18px 14px;gap:12px}.plan-content strong{font-size:19px}.plan-icon{font-size:27px;width:27px}.choice-mark{display:none}}
+.date-stamp{margin:26px auto 0;padding:18px 20px;border:1px dashed #c68a9e;border-radius:9px;width:fit-content;background:#f6e0e8}.crossed-date{font-size:12px;text-decoration:line-through;color:var(--muted);margin-right:15px}.date-stamp strong{font-size:12px;letter-spacing:1px;color:var(--rose)}.date-stamp p{font-size:12px;line-height:1.6;color:var(--muted);margin:10px 0 0}
+/* A little artist's sketchbook */
+body{background-color:#faedf0;background-image:radial-gradient(ellipse at 5% 22%,#d6cce455,transparent 29%),radial-gradient(ellipse at 93% 70%,#bfcfbf44,transparent 28%),radial-gradient(ellipse at 65% 0%,#f1cfa344,transparent 30%)}.art-doodles{position:fixed;inset:0;pointer-events:none;overflow:hidden}.art-doodles svg{position:absolute;opacity:.7}.doodle-flower{width:110px;left:5%;top:35%;transform:rotate(-14deg)}.doodle-palette{width:135px;right:4%;bottom:19%;transform:rotate(13deg)}.doodle-sparkles{width:85px;right:13%;top:21%}.letter-paper::before,.ticket::before{content:'';position:absolute;width:100px;height:29px;top:-14px;left:calc(50% - 50px);background:repeating-linear-gradient(100deg,#c5b8d580 0 8px,#dacde68c 8px 16px);transform:rotate(-5deg);clip-path:polygon(2% 0,98% 2%,95% 20%,100% 39%,96% 60%,99% 80%,96% 100%,0 98%,4% 73%,0 51%,4% 25%);z-index:1}.ticket::before{background:repeating-linear-gradient(100deg,#a9bfa680 0 8px,#c9d5bc8c 8px 16px);transform:rotate(5deg)}.letter-paper{background-color:#fffafb;background-image:repeating-linear-gradient(transparent 0 31px,#d4bccc13 31px 32px)}.plan-card{box-shadow:3px 4px 0 #d5b8c31c;border-radius:5px 12px 8px 11px}.plan-card:nth-of-type(1) .plan-icon{background:#e6b6c744;transform:rotate(-9deg)}.plan-card:nth-of-type(2) .plan-icon{background:#c8b9df55;transform:rotate(8deg)}.plan-card:nth-of-type(3) .plan-icon{background:#bfd0b655;transform:rotate(-6deg)}.plan-card:nth-of-type(4) .plan-icon{background:#edd29955;transform:rotate(6deg)}.plan-icon{border-radius:44% 56% 60% 40%;padding:8px 0;width:50px}.date-stamp{transform:rotate(-1deg);background:#fff8eac7;border-color:#d7b9a1}.primary{border-radius:9px 7px 11px 6px}.open-caption{transform:rotate(-3deg)}@media(max-width:900px){.doodle-flower{width:65px;left:-17px;top:33%;opacity:.35!important}.doodle-palette{width:80px;right:-20px;bottom:14%;opacity:.35!important}.doodle-sparkles{width:45px;right:4%;top:17%;opacity:.45!important}}@media(prefers-reduced-motion:no-preference){.doodle-flower{animation:art-sway 7s ease-in-out infinite}.doodle-palette{animation:art-float 8s ease-in-out infinite}@keyframes art-sway{50%{transform:rotate(-7deg)}}@keyframes art-float{50%{transform:translateY(-8px) rotate(8deg)}}}
+
+/* Phone layouts: comfortable controls, readable cards, and safe-area spacing. */
+html{overflow-x:hidden}body{overflow-x:clip}button,a,input,textarea{-webkit-tap-highlight-color:transparent}button{touch-action:manipulation}section{min-width:0;max-width:100%}.plan-content{min-width:0}.ticket,.letter-paper{overflow-wrap:anywhere}textarea{font-size:16px}
+@media(max-width:600px){
+ header{margin-inline:22px;height:74px}.wordmark{font-size:20px}
+ main{padding:36px 22px 38px;min-height:calc(100svh - 174px)}
+ h1{font-size:clamp(36px,9vw,48px);line-height:1.18;margin:22px 0 18px}
+ h2{font-size:clamp(35px,9vw,48px);line-height:1.2}
+ .lead{font-size:16px;line-height:1.75}.intro .lead br{display:none}
+ .intro{width:100%;max-width:390px}.envelope-button{width:min(275px,85%);margin:14px auto 25px}.envelope{height:auto;display:block}.open-caption{margin-top:0;font-size:13px}
+ .floating-heart{left:-12px;font-size:34px;top:65px}.heart-two{left:auto;right:-13px;top:115px;font-size:25px}
+ .primary,.secondary{min-height:50px;padding:15px 22px;font-size:15px}.intro>.primary{width:min(100%,280px)}
+ .small-note,.response-note{font-size:13px;line-height:1.65}.eyebrow{font-size:10px;letter-spacing:1.7px;line-height:1.7;flex-wrap:wrap;gap:9px}
+ .letter-paper{padding:28px 19px 24px;transform:none;margin-top:27px}.letter-copy{font-size:16px;line-height:1.8}.salutation{font-size:15px}.signature{font-size:16px}.date-details{flex-wrap:wrap;gap:10px 16px;font-size:13px}.answers{gap:12px}.text-button{min-height:48px;font-size:14px;padding:16px 12px}
+ .plans h2{margin-top:18px}.plan-options{gap:15px;margin-top:25px}.plan-card{padding:19px 15px;gap:13px;align-items:flex-start}.plan-icon{width:39px;flex-basis:39px;font-size:26px;margin-top:2px;padding:7px 0}.plan-content strong{font-size:21px;line-height:1.3}.plan-content>span{font-size:14px;line-height:1.65}.plan-content .itinerary{font-size:13px}.opinion-label{font-size:15px;line-height:1.65}.opinion-label span{font-size:13px}#plan-form>.primary{width:100%}.date-stamp{width:100%;padding:17px 13px}.date-stamp strong{font-size:13px}.date-stamp p{font-size:14px}
+ .celebration{width:100%}.celebration h2{font-size:57px}.big-heart{font-size:75px}.ticket{width:min(310px,94%);margin:30px auto;padding:25px 22px 18px}.ticket p{font-size:15px}.ticket-label{font-size:12px}.ticket-bottom{font-size:11px;line-height:1.6;gap:12px}.next-step{font-size:15px;line-height:1.7}.celebration>.primary{width:min(100%,310px)}
+ footer{margin-inline:22px;height:auto;min-height:100px;align-items:flex-start;padding:20px 0 72px;gap:14px;font-size:12px;line-height:1.6}footer>span:first-child{max-width:61%}footer>span:last-child{white-space:nowrap}
+}
+@media(max-width:360px){main{padding-inline:16px}header,footer{margin-inline:16px}.plan-card{padding:17px 12px;gap:10px}.plan-icon{width:30px;flex-basis:30px;font-size:22px}.plan-content strong{font-size:19px}h1{font-size:35px}.eyebrow{letter-spacing:1.2px}.date-details{font-size:12px}}
+/* Full-height invitation without the top header. */
+main{min-height:calc(100svh - 78px)}
+@media(max-width:600px){main{min-height:calc(100svh - 100px)}}
+/* Small, playful gestures; motion stays optional. */
+@media(prefers-reduced-motion:no-preference){
+ .envelope{animation:envelope-float 5s ease-in-out infinite;transform-origin:50% 65%}
+ .envelope-button:hover .envelope{animation:envelope-wiggle .75s ease-in-out both}
+ .envelope circle{transform-box:fill-box;transform-origin:center;animation:seal-pulse 3.8s ease-in-out infinite}
+ .floating-heart{animation:heart-drift 4s ease-in-out infinite}.heart-two{animation-delay:-2s}
+ .primary,.secondary,.plan-card,.text-button{transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease}
+ .primary:active,.secondary:active{transform:scale(.96)}
+ .plan-card:active{transform:scale(.985)}
+ .plan-card:has(input:checked) .plan-icon{animation:choice-pop .45s ease both}
+ .plan-card:has(input:checked) .choice-mark{animation:choice-pop .45s ease both}
+ .ticket{animation:ticket-arrive .65s cubic-bezier(.2,.8,.2,1) both}
+ .letter-paper{animation:paper-arrive .55s cubic-bezier(.2,.8,.2,1) both}
+ textarea{transition:border-color .2s,box-shadow .2s}textarea:focus{box-shadow:0 4px 20px #a3325510}
+ @keyframes envelope-float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-7px) rotate(1deg)}}
+ @keyframes envelope-wiggle{0%,100%{transform:translateY(-4px) rotate(-3deg)}30%{transform:translateY(-7px) rotate(3deg)}65%{transform:translateY(-5px) rotate(-4deg)}}
+ @keyframes seal-pulse{0%,75%,100%{transform:scale(1)}83%{transform:scale(1.07)}91%{transform:scale(1)}}
+ @keyframes heart-drift{0%,100%{transform:translateY(0) rotate(-12deg)}50%{transform:translateY(-6px) rotate(-4deg)}}
+ @keyframes choice-pop{0%{scale:.85}55%{scale:1.15}100%{scale:1}}
+ @keyframes ticket-arrive{from{opacity:0;transform:translateY(15px) rotate(3deg) scale(.96)}to{opacity:1;transform:translateY(0) rotate(-3deg) scale(1)}}
+ @keyframes paper-arrive{from{opacity:0;translate:0 12px;scale:.98}to{opacity:1;translate:0 0;scale:1}}
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.plan-card:hover{transform:translateY(-3px);box-shadow:0 7px 18px #a3325510}.text-button:hover{transform:translateY(-2px)}}
+/* A small storybook, with a cloth cover and hinged paper pages. */
+main{perspective:1800px;padding:45px 28px 55px}:is(main,.turn-front)>section{position:relative;transform-origin:left center;backface-visibility:hidden;width:min(100%,680px);padding:40px 38px;background:linear-gradient(90deg,#e9d6d9 0,#fff8f6 18px,#fffafb 48px,#fff8f6 100%);border:1px solid #dfc1cc;border-left:9px solid #b76b88;border-radius:5px 16px 16px 5px;box-shadow:3px 3px 0 #f1e2e5,5px 5px 0 #dfc7d0,8px 8px 0 #f7e9ec,12px 15px 35px #73405420;animation:none;transition:opacity .25s}:is(main,.turn-front)>section::after{content:'♡';display:block;color:#bd8d9f;font:16px Georgia,serif;margin-top:23px}:is(main,.turn-front)>.intro{max-width:620px;background:linear-gradient(95deg,#edceda,#f8e7ed 12%,#f9ecf0 85%,#f0d5df);border-left-color:#a85876}.intro h1{font-size:clamp(36px,4.5vw,56px)}.book-illustration{display:block;border:0;background:none;margin:25px auto 22px;cursor:pointer;color:var(--muted);padding:0;perspective:800px}.mini-book{display:block;width:165px;height:205px;position:relative;background:#f8eeee;border-radius:3px 9px 9px 3px;box-shadow:3px 3px 0 #e2cbd2,6px 6px 0 #fff8f8,8px 8px 0 #dec1cd,12px 15px 20px #8d4c6620;transform:rotate(-7deg);transition:transform .4s}.book-cover-art{position:absolute;inset:0;border-left:10px solid #ac607f;border-radius:3px 7px 7px 3px;background:linear-gradient(110deg,#cd91aa,#e8b7c9);display:flex;align-items:center;flex-direction:column;justify-content:center;color:#682f49;outline:1px solid #fff5f54d;outline-offset:-17px;transform-origin:left;transition:transform .5s}.cover-title{font:italic 29px/1.1 'Playfair Display',Georgia,serif;margin:10px 0 17px}.cover-flower{font-size:36px;color:#fce6a7}.cover-dedication{font-size:9px;letter-spacing:2px}.cover-stars{font-size:17px;margin-top:13px;color:#fff1ef}.book-illustration .open-caption{margin-top:23px}.book-illustration:hover .mini-book{transform:rotate(-3deg) translateY(-3px)}.book-illustration:hover .book-cover-art{transform:rotateY(-20deg)}.book-open .letter-paper{box-shadow:none;background:transparent;border:0;padding:15px 0 0;transform:none;animation:none}.book-open .letter-paper::before{display:none}.book-open .plans{padding-inline:32px}.book-open .celebration h2{font-size:60px}.book-open .ticket{background:#fff6f8}.page-leaving{pointer-events:none}.page-arriving{pointer-events:none}
+@media(prefers-reduced-motion:no-preference){:is(main,.turn-front)>section.page-leaving{animation:book-page-out .34s ease-in both}:is(main,.turn-front)>section.page-arriving{animation:book-page-in .65s cubic-bezier(.15,.65,.2,1) both}@keyframes book-page-out{from{transform:rotateY(0);opacity:1}to{transform:rotateY(-80deg);opacity:0}}@keyframes book-page-in{from{transform:rotateY(65deg);opacity:0}to{transform:rotateY(0);opacity:1}}}
+@media(max-width:600px){main{padding:24px 16px 35px;perspective:1200px}:is(main,.turn-front)>section{padding:30px 20px 25px;border-left-width:6px;border-radius:4px 12px 12px 4px}.intro h1{font-size:clamp(32px,8.4vw,41px)}.intro .lead{font-size:15px}.mini-book{width:145px;height:182px}.cover-title{font-size:26px}.cover-flower{font-size:29px}.book-open .plans{padding-inline:16px}.book-open .letter-paper{padding-inline:0}.book-open .plan-card{gap:10px;padding:16px 11px}.book-open .plan-content strong{font-size:19px}.book-open .plan-icon{width:30px;flex-basis:30px;font-size:23px}.book-open .plan-content>span{font-size:13px}.book-open .plan-content .itinerary{font-size:12px}.book-open .celebration h2{font-size:49px}.book-open .eyebrow{font-size:9px;letter-spacing:1.3px}.book-open .date-stamp strong{font-size:12px}.book-open .date-stamp p{font-size:13px}.book-open h2{font-size:36px}.book-open .letter-copy{font-size:15px}.book-open .ticket{width:95%}footer{padding-bottom:25px;min-height:75px}}
+/* Warm, timeworn pages with a softer turn. */
+:root{--ink:#594438;--rose:#90594f;--muted:#897060;--background:#eee4d5}
+body{background-color:#eee4d5;background-image:radial-gradient(ellipse at 10% 20%,#b9a58b30,transparent 50%),radial-gradient(ellipse at 90% 80%,#baa08726,transparent 50%)}body::before{background:radial-gradient(ellipse at center,#fffaf035,transparent 75%)}.grain{opacity:.24}.art-doodles svg{filter:sepia(.5) saturate(.65)}
+:is(main,.turn-front)>section,:is(main,.turn-front)>.intro{background-color:#f4e8d2;background-image:linear-gradient(90deg,#c8ae8255 0,#ecd9b643 12px,transparent 38px),radial-gradient(ellipse at 0 0,#b68e532b,transparent 40%),radial-gradient(ellipse at 100% 100%,#b68e5326,transparent 45%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='p'%3E%3CfeTurbulence baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.09' filter='url(%23p)'/%3E%3C/svg%3E");border-color:#cbb896;border-left-color:#8e6555;box-shadow:3px 3px 0 #e5d6bb,5px 5px 0 #c5b18e,8px 8px 0 #ede0c6,12px 16px 35px #5b493623;backface-visibility:hidden;will-change:auto}.book-open .letter-paper{background:none}.plan-card{background:#fff7e777;border-color:#d7c3a6}.plan-card:has(input:checked){background:#e9d7bc;border-color:#90594f}.plan-card:hover{border-color:#9e7761}.plan-content .itinerary{color:#90594f}.primary{background:#90594f;box-shadow:0 4px 12px #60403212}.primary:hover{background:#75453d}.secondary{background:#e4d4bb;color:#765347}.secondary:hover{background:#d8c3a5}.date-stamp{background:#ead8b755;border-color:#b89b70}.ticket,.book-open .ticket{background:#f6ebd7;border-color:#cbb08c}.ticket::before{filter:sepia(.7)}textarea{background:#fbf2df;border-color:#cdb494}.book-cover-art{background:linear-gradient(110deg,#aa7d69,#c89c82);border-left-color:#795444;color:#493229}.cover-title{color:#493229}.cover-flower{color:#f3d594}.mini-book{box-shadow:3px 3px 0 #cab58e,6px 6px 0 #f4e7ce,8px 8px 0 #baa07e,12px 15px 20px #6b493423}.cover-dedication,.cover-stars{color:#f6e5c7}.date-details,footer{border-color:#c6af8c66}.big-heart,.paper-heart{color:#90594f}
+@media(prefers-reduced-motion:no-preference){
+ :is(main,.turn-front)>section.page-leaving{animation:paper-turn-out .28s cubic-bezier(.4,0,.8,.5) both;will-change:transform,opacity}
+ :is(main,.turn-front)>section.page-arriving{animation:paper-turn-in .8s cubic-bezier(.16,1,.3,1) both;will-change:transform,opacity}
+ @keyframes paper-turn-out{from{transform:rotateY(0);opacity:1}to{transform:rotateY(-12deg) translateX(-8px);opacity:0}}
+ @keyframes paper-turn-in{from{transform:rotateY(14deg) translateX(10px);opacity:0}to{transform:rotateY(0) translateX(0);opacity:1}}
+}
+
+/* Real front-and-back paper leaf, folding over the binding. */
+.turning-leaf{position:absolute;z-index:30;transform-origin:left center;transform-style:preserve-3d;pointer-events:none;filter:drop-shadow(5px 8px 12px #4a30252b)}
+.turn-front,.turn-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:3px 13px 13px 3px;overflow:hidden;background:#f4e8d2}
+.turn-back{transform:rotateY(180deg);background:linear-gradient(90deg,#c6ab7d44,transparent 18%),repeating-linear-gradient(0deg,#b99a6a09 0 1px,transparent 1px 4px),#f4e8d2;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#9c8065;box-shadow:inset -12px 0 22px #9b774c1a}
+.turn-back>span{font-size:70px;color:#b49473}.turn-back i{font:italic 28px 'Playfair Display',Georgia,serif;margin-top:24px}.turn-back small{font-size:11px;letter-spacing:3px;margin-top:25px}
+.turn-front>section{min-height:100%;box-shadow:none;animation:none!important;max-width:none!important}
+@media(min-width:900px){
+ :is(main,.turn-front)>section{width:min(100%,1040px);max-width:1040px!important;min-height:700px;padding:42px 35px 32px calc(50% + 30px);position:relative;border-left-width:8px;background-image:linear-gradient(90deg,transparent 47%,#baa07822 49%,#80623f40 50%,#baa07822 51%,transparent 54%),radial-gradient(ellipse at 0 0,#b68e532b,transparent 40%),radial-gradient(ellipse at 100% 100%,#b68e5326,transparent 45%)}
+ :is(main,.turn-front)>section::before{content:'a little us time';position:absolute;left:0;top:0;width:50%;height:100%;display:flex;align-items:center;justify-content:center;padding-top:160px;font:italic 36px 'Playfair Display',Georgia,serif;color:#896c54;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 220' fill='none'%3E%3Cpath d='M100 185Q115 135 100 89M105 155Q63 143 65 123Q94 122 106 149M105 171Q140 142 149 150Q139 172 105 177' stroke='%23838d6b' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M98 64C61 39 63 13 85 22C94-3 121 12 115 35C145 23 158 55 127 63C149 91 116 110 104 82C83 112 54 83 81 67Z' fill='%23c69b83' stroke='%23956856' stroke-width='2'/%3E%3Ccircle cx='103' cy='57' r='13' fill='%23d9bc7f'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center 30%;background-size:170px;pointer-events:none}
+ .book-open .plans{padding-left:calc(50% + 28px);padding-right:28px}.intro h1{font-size:43px}.intro .lead{font-size:15px}.book-open h2{font-size:46px}.book-open .plan-card{padding:17px 14px;gap:12px}.book-open .plan-content strong{font-size:20px}.book-open .plan-icon{width:34px;flex-basis:34px}.book-open .letter-paper{padding-top:12px}.book-open .celebration h2{font-size:55px}
+}
+@media(max-width:899px){.turning-leaf{filter:drop-shadow(3px 7px 10px #4a302522)}.turn-back i{font-size:24px}}
+
+main{max-width:1096px;margin-inline:auto}
+/* Deckled, timeworn leaves inspired by an old hand-bound book. */
+:is(main,.turn-front)>section{border-radius:1px;border:0;border-left:7px solid #806044;clip-path:polygon(.3% 1.2%,2% .8%,3% .2%,6% .6%,9% .3%,13% .7%,18% .2%,23% .5%,29% .1%,35% .6%,41% .3%,47% .8%,50% .3%,55% .7%,61% .2%,68% .6%,74% .1%,81% .5%,88% .2%,94% .8%,98% .5%,99.4% 1.4%,99.7% 5%,99.3% 10%,99.8% 17%,99.4% 25%,99.9% 33%,99.5% 41%,99.8% 48%,99.4% 56%,99.9% 64%,99.5% 73%,99.8% 80%,99.3% 89%,99.7% 95%,98.8% 98.9%,95% 99.5%,91% 99%,85% 99.7%,79% 99.2%,72% 99.8%,65% 99.4%,58% 99.9%,51% 99.3%,48% 99.8%,42% 99.2%,35% 99.7%,29% 99.3%,22% 99.8%,16% 99.2%,10% 99.7%,5% 99.1%,1.2% 99.5%,.3% 98%,.7% 92%,.1% 86%,.6% 79%,.2% 71%,.7% 64%,.1% 56%,.5% 48%,.1% 39%,.6% 31%,.2% 23%,.7% 15%,.2% 8%);box-shadow:inset 0 0 3px 2px #77502688,inset 0 0 15px 4px #95632845,inset 0 0 40px 8px #a67b3820}
+main{filter:drop-shadow(3px 9px 5px #503a3230) drop-shadow(0 18px 18px #503a3215)}
+:is(main,.turn-front)>section::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:4;margin:0;background:linear-gradient(177deg,#72502c77 0,transparent 1.2%,#b5904f33 1.5%,transparent 2.1%),linear-gradient(3deg,#75502d88 0,transparent 1.1%,#94703c55 1.5%,transparent 1.9%,#b89b6533 2.3%,transparent 2.7%),linear-gradient(89deg,#62432988,transparent 1.4%,#8b683655 1.8%,transparent 2.3%,#a38b5d44 2.8%,transparent 3.3%),linear-gradient(271deg,#78502c88,transparent .8%,#8b683655 1.2%,transparent 1.7%,#b39a6644 2.2%,transparent 2.8%),radial-gradient(ellipse at 2% 2%,#80562455,transparent 12%),radial-gradient(ellipse at 98% 98%,#80562455,transparent 12%),radial-gradient(ellipse at 2% 96%,#92642a44,transparent 15%),radial-gradient(ellipse at 97% 4%,#92642a44,transparent 13%);box-shadow:inset 0 0 2px 1px #69452288}
+.turn-front,.turn-back{border-radius:1px}.turn-back{box-shadow:inset 0 0 3px 2px #77502688,inset 0 0 18px 4px #95632840}
+@media(min-width:900px){:is(main,.turn-front)>section{border-left-width:9px}:is(main,.turn-front)>section::before{box-shadow:inset -12px 0 20px -15px #523b24}}
+@media(max-width:600px){:is(main,.turn-front)>section{border-left-width:5px;padding-top:34px;padding-bottom:32px}.book-open .plans{padding-top:34px}}
+
+/* Every chapter shares the same measured paper size. */
+main>section{min-height:var(--book-height,700px)!important}
+
+/* Keep the 3D leaf unflattened; face visibility is swapped at 90 degrees. */
+.turning-leaf{filter:none!important;transform-style:preserve-3d}.turn-front{transform:translateZ(.1px)}.turn-back{transform:rotateY(180deg) translateZ(.1px)}
+
+/* A handwritten-feeling dedication on the facing page. */
+.vee-note{display:none}
+@media(min-width:900px){
+ main{position:relative}
+ main>.vee-note{display:flex;position:absolute;z-index:6;top:45px;left:36px;width:calc(50% - 36px);height:calc(var(--book-height,700px));padding:45px 24px;flex-direction:column;align-items:center;justify-content:center;text-align:center;pointer-events:none;color:var(--ink)}
+ .vee-note .note-flower{font-size:53px;color:#ab876b;margin-bottom:24px;line-height:1}
+ .vee-note .eyebrow{font-size:10px;letter-spacing:2px}
+ .vee-note h2{font-size:43px;margin:17px 0 22px}
+ .vee-note p{font:17px/1.9 'Playfair Display',Georgia,serif;color:#7d6653;margin:0 0 23px}
+ .vee-note .note-ending{font-style:italic;color:#90594f}
+ .note-flourish{color:#a68a6e;font-size:19px;margin-top:10px}
+ :is(main,.turn-front)>section::before{content:'';background-image:none;box-shadow:inset -12px 0 20px -15px #523b24}
+}
+
+/* Keep the complete desktop spread above the fold. */
+@media(min-width:900px){
+ main{padding-top:24px;padding-bottom:24px;min-height:0}
+ main>section{height:var(--book-height);min-height:0!important;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#b49b77 transparent;padding-top:28px;padding-bottom:25px}
+ main>.vee-note{top:24px;height:var(--book-height);padding:28px 20px;justify-content:center}
+ .vee-note .note-flower{font-size:40px;margin-bottom:16px}.vee-note h2{font-size:36px;margin:14px 0 17px}.vee-note p{font-size:16px;line-height:1.75;margin-bottom:18px}
+ .intro h1{font-size:38px;margin:17px 0}.intro .lead{font-size:14px;line-height:1.7}.book-illustration{margin:20px auto 19px}.mini-book{width:135px;height:165px}.cover-title{font-size:24px;margin:7px 0 12px}.cover-flower{font-size:27px}.cover-stars{margin-top:9px}.book-illustration .open-caption{margin-top:17px}.intro .small-note{margin-top:15px;font-size:11px}
+ .book-open .letter-paper{margin-top:12px}.book-open .letter-copy{font-size:14px;line-height:1.7}.book-open .signature{margin-top:15px}.book-open .date-details{padding:14px 0;margin:18px 0}
+ footer{height:28px;font-size:11px;border-top:0}
+}
+@media(min-width:900px) and (max-height:760px){
+ .vee-note p{font-size:14px;line-height:1.65;margin-bottom:14px}.vee-note .note-flower{font-size:30px;margin-bottom:12px}.vee-note h2{font-size:30px;margin:10px 0 14px}.note-flourish{margin-top:0}
+ .intro h1{font-size:32px;margin:12px 0}.intro .lead{font-size:13px}.mini-book{width:110px;height:140px}.cover-title{font-size:21px}.cover-flower{font-size:22px}.cover-dedication{font-size:8px}.book-illustration{margin:13px auto}.book-illustration .open-caption{margin-top:13px}.primary,.secondary{padding:13px 20px}.intro .small-note{margin-top:12px}.book-open h2{font-size:36px}.paper-heart{font-size:28px}.salutation{margin:8px 0 12px}.book-open .letter-copy{font-size:13px}.book-open .signature{font-size:13px;margin-top:10px}.book-open .date-details{margin:12px 0;padding:10px 0}.book-open .letter-paper{margin-top:8px}.book-open .text-button{padding:12px}.book-open .response-note{margin:8px 0}
+}
+
+/* The paper frame never scrolls: only the inner right-page content does. */
+.page-content{min-width:0}
+@media(min-width:900px){
+ main>section,.turn-front>section{overflow:hidden}
+ .page-content{height:100%;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#b49b77 transparent;padding:3px 5px 20px;position:relative}
+ .intro .page-content>.primary{display:inline-block}
+ main>.vee-note{z-index:7}
+}
+@media(max-width:899px){.page-content{height:auto;overflow:visible}}
+@media(max-width:600px){.intro .page-content>.primary{width:min(100%,280px)}.celebration .page-content>.primary{width:min(100%,310px)}}
+
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="art-doodles" aria-hidden="true">
+<svg class="doodle-flower" viewBox="0 0 120 170" fill="none"><path d="M57 155Q70 107 58 65M61 119Q28 104 33 88Q58 87 63 114M63 137Q94 112 99 123Q91 140 63 143" stroke="#718c70" stroke-width="3" stroke-linecap="round"/><path d="M58 53C25 32 26 4 48 13C55-10 82 0 76 24C105 14 115 43 88 51C108 78 80 94 66 70C46 98 21 74 43 57Z" fill="#e8b0c6" stroke="#ba6c8b" stroke-width="2"/><circle cx="63" cy="46" r="12" fill="#edce7b"/></svg>
+<svg class="doodle-palette" viewBox="0 0 150 150" fill="none"><path d="M112 100C142 74 121 29 83 24C39 16 15 50 25 88C31 112 55 131 73 117C83 109 69 93 82 90C95 87 99 111 112 100Z" fill="#f5dfc8" stroke="#b88c78" stroke-width="2"/><circle cx="48" cy="60" r="9" fill="#b8c8ad"/><circle cx="73" cy="43" r="9" fill="#e8b0c6"/><circle cx="100" cy="56" r="9" fill="#c4bbd8"/><circle cx="107" cy="80" r="8" fill="#edce7b"/><path d="M38 133L110 43" stroke="#8e6574" stroke-width="6" stroke-linecap="round"/><path d="M108 46Q112 27 124 25Q128 38 112 48" fill="#a86b85"/></svg>
+<svg class="doodle-sparkles" viewBox="0 0 100 100" fill="none" stroke="#b789a0" stroke-width="2" stroke-linecap="round"><path d="M36 10Q36 36 13 37Q36 37 36 63Q36 37 59 37Q36 36 36 10ZM77 57V81M65 69H89M72 17L76 23M86 15L82 23"/></svg>
+</div>
+
+<main>
+<aside class="vee-note" aria-label="A little about VEE"><span class="note-flower" aria-hidden="true">✿</span><span class="eyebrow">A LITTLE ABOUT HER</span><h2>VEE <em>♡</em></h2><p>A girl with a love for art,<br>and a way of making a conversation<br>worth coming back to.</p><p>Somewhere between the little messages<br>and “how was your day?”,<br>a month went by.</p><p class="note-ending">Now I’m curious what we’ll make<br>of a day together.</p><span class="note-flourish" aria-hidden="true">✧ &nbsp; ♡ &nbsp; ✧</span></aside>
+<section class="intro" id="intro"><div class="page-content">
+<div class="eyebrow"><span></span> JUST BETWEEN YOU & ME <span></span></div>
+<h1>Hey VEE ♡<br>We’d look good <em>on a date.</em></h1>
+<p class="lead">A month of little messages.<br>Now for a little adventure together.</p>
+<button class="book-illustration" id="open-letter" aria-label="Open VEE’s book">
+<span class="mini-book"><span class="book-cover-art"><span class="cover-flower">✿</span><span class="cover-title">a little<br>us time</span><span class="cover-dedication">FOR VEE ♡</span><span class="cover-stars">✧ &nbsp; ♡ &nbsp; ✧</span></span></span>
+<span class="open-caption">a tiny story, just for VEE</span></button>
+<button class="primary" id="open-button">Open your book <span>♡</span></button>
+<p class="small-note">P.S. Yes, I made a whole website. Smooth, right?</p>
+</div></section>
+<section class="letter hidden" id="letter" aria-labelledby="question"><div class="page-content">
+<div class="eyebrow">CONSIDER THIS MY NEXT MOVE</div>
+<div class="letter-paper"><span class="paper-heart">♡</span><p class="salutation">To VEE, my favorite distraction,</p><h2 id="question">Will you go on<br>a <em>date with me?</em></h2><p class="letter-copy">A month of good conversation.<br>Time for good food, a little flirting,<br>and finding out who’s funnier in person.</p><div class="date-details"><span>✿ &nbsp; You + me</span><span>♡ &nbsp; A little quality time</span></div><div class="answers"><button class="primary" id="yes">Yes, I'd love to ♡</button><button class="secondary" id="later">Let's pick a day</button></div><p class="response-note" id="response-note" aria-live="polite"></p><span class="signature">I’ll bring the charm.<br><b>You bring yourself.</b></span></div>
+<button class="text-button" id="back">Close the book</button>
+</div></section>
+<section class="plans hidden" id="plans" aria-labelledby="plans-title"><div class="page-content">
+<div class="eyebrow">GOOD TASTE. NOW PUT IT TO WORK.</div>
+<h2 id="plans-title">Pick your <em>kind of date.</em></h2>
+<p class="lead">Friday, 27 November. I brought the ideas.<br>You get the deciding vote.</p>
+<div class="date-stamp"><strong>27 NOV · IT’S A DATE</strong><p>A date with me. Your other plans never stood a chance.</p></div>
+<form id="plan-form">
+<fieldset class="plan-options"><legend class="sr-only">Choose a date plan</legend>
+<label class="plan-card"><input type="radio" name="plan" value="Clay date → Sunder Nursery → dessert" required><span class="plan-icon">✿</span><span class="plan-content"><strong>A little messy. A little sweet.</strong><span class="itinerary">Clay date · Sunder Nursery · Dessert</span><span>Make something slightly wonky, take a long walk, and end on a sugar high.</span></span><span class="choice-mark">♡</span></label>
+<label class="plan-card"><input type="radio" name="plan" value="Painting date → Sunder Nursery → dessert"><span class="plan-icon">✧</span><span class="plan-content"><strong>A little color. A little sweetness.</strong><span class="itinerary">Painting date · Sunder Nursery · Dessert</span><span>Make a little art, take a slow stroll, and finish with something sweet.</span></span><span class="choice-mark">♡</span></label>
+<label class="plan-card"><input type="radio" name="plan" value="Our own remix"><span class="plan-icon">♡</span><span class="plan-content"><strong>You’ve got a better idea?</strong><span class="itinerary">Mix the plans or pitch your own</span><span>Clay or painting? Just a walk and dessert? I’m listening.</span></span><span class="choice-mark">♡</span></label>
+</fieldset>
+<label class="opinion-label" for="opinion">Your additions, swaps or strong dessert opinions <span>(optional)</span></label>
+<textarea id="opinion" rows="3" maxlength="600" placeholder="I’m thinking…"></textarea>
+<button class="primary" type="submit">That’s our date ♡</button>
+<p class="small-note">27 November 2026. We’ll sort the time and details in chat.</p>
+</form><button class="text-button" id="plans-back">Turn back to the invitation</button>
+</div></section>
+<section class="celebration hidden" id="celebration" aria-labelledby="yay" aria-live="polite"><div class="page-content"><div class="big-heart">♡</div><div class="eyebrow">OKAY, NOW I'M SMILING</div><h2 id="yay">It's a <em>date!</em></h2><p class="lead">Excellent choice. I like your taste.</p><div class="ticket"><span class="ticket-label">ADMIT TWO</span><h3>You & me</h3><p id="chosen-plan">Good company. Questionable jokes.</p><p id="chosen-opinion" class="chosen-opinion"></p><div class="ticket-bottom">FRIDAY, 27 NOVEMBER 2026 <span>♡</span></div></div><p class="next-step">27 November. Copy your pick and send it to me.</p><button class="primary" id="copy">Copy my date choice ♡</button><p id="copy-status" class="small-note" aria-live="polite">Now we get to see if you’re this charming in person.</p><button class="text-button" id="reread">Change my pick</button></div></section>
+</main>
+<footer><span>good conversation deserves a proper date.</span><span>sealed with a <b>♡</b></span></footer>
+<div id="confetti" aria-hidden="true"></div>
+<script>
+const intro = document.querySelector('#intro');
+const letter = document.querySelector('#letter');
+const plans = document.querySelector('#plans');
+let selectedPlan = '';
+let selectedOpinion = '';
+const celebration = document.querySelector('#celebration');
+// Measure every page at the current width, then share the tallest height.
+function sizeBook() {
+  const pages = [intro, letter, plans, celebration];
+  const main = document.querySelector('main');
+  if (window.matchMedia('(min-width: 900px)').matches) {
+    main.style.setProperty('--book-height', `${Math.max(420, window.innerHeight - 76)}px`);
+    return;
+  }
+  main.style.removeProperty('--book-height');
+  const pageWidth = pages.find(page => !page.classList.contains('hidden')).getBoundingClientRect().width;
+  const heights = pages.map(page => {
+    const wasHidden = page.classList.contains('hidden');
+    page.style.width = `${pageWidth}px`;
+    if (wasHidden) {
+      page.classList.remove('hidden');
+      page.style.position = 'absolute';
+      page.style.visibility = 'hidden';
+      page.style.pointerEvents = 'none';
+    }
+    const height = page.getBoundingClientRect().height;
+    if (wasHidden) {
+      page.classList.add('hidden');
+      page.style.removeProperty('position');
+      page.style.removeProperty('visibility');
+      page.style.removeProperty('pointer-events');
+    }
+    page.style.removeProperty('width');
+    return height;
+  });
+  main.style.setProperty('--book-height', `${Math.ceil(Math.max(...heights))}px`);
+}
+sizeBook();
+if (document.fonts) document.fonts.ready.then(sizeBook);
+let bookResizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(bookResizeTimer);
+  bookResizeTimer = setTimeout(sizeBook, 150);
+});
+let turningPage = false;
+function show(section) {
+  if (turningPage) return;
+  const pages = [intro, letter, plans, celebration];
+  const current = pages.find(page => !page.classList.contains('hidden'));
+  if (current === section) return;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const backward = pages.indexOf(section) < pages.indexOf(current);
+  const rect = current.getBoundingClientRect();
+  const spread = window.matchMedia('(min-width: 900px)').matches;
+  let leaf;
+  if (!reduced) {
+    leaf = document.createElement('div');
+    leaf.className = 'turning-leaf';
+    leaf.setAttribute('aria-hidden', 'true');
+    leaf.inert = true;
+    const half = spread ? rect.width / 2 : rect.width;
+    leaf.style.cssText = `left:${rect.left + (spread ? half : 0)}px;top:${rect.top + window.scrollY}px;width:${half}px;height:${rect.height}px`;
+    const front = document.createElement('div');
+    front.className = 'turn-front';
+    const copy = current.cloneNode(true);
+    copy.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+    copy.removeAttribute('id');
+    copy.style.cssText = `width:${rect.width}px;max-width:none;height:${rect.height}px;margin:0;`;
+    if (spread) { copy.style.marginLeft = `-${half}px`; copy.style.paddingLeft = `${half + 30}px`; }
+    front.append(copy);
+    const back = document.createElement('div');
+    back.className = 'turn-back';
+    back.innerHTML = '<span>✿</span>';
+    leaf.append(front, back);
+    document.body.append(leaf);
+  }
+  pages.forEach(item => item.classList.toggle('hidden', item !== section));
+  document.body.classList.toggle('book-open', section !== intro);
+  const finish = () => {
+    leaf?.remove();
+    turningPage = false;
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    const heading = section.querySelector('h1, h2');
+    heading.setAttribute('tabindex', '-1');
+    heading.focus({ preventScroll: true });
+  };
+  if (reduced) { finish(); return; }
+  turningPage = true;
+  // Keep the sheet opaque as it passes over the spine, with a real reverse side.
+  const animation = leaf.animate([
+    { transform: backward ? 'perspective(2200px) rotateY(-180deg)' : 'perspective(2200px) rotateY(0deg)' },
+    { transform: backward ? 'perspective(2200px) rotateY(0deg)' : 'perspective(2200px) rotateY(-180deg)' }
+  ], { duration: 1150, easing: 'cubic-bezier(.35,.05,.2,1)', fill: 'forwards' });
+  // Explicitly swap faces at the spine. This also avoids mirrored glyphs
+  // in browsers that flatten nested 3D layers with clipping or shadows.
+  const frontFace = leaf.querySelector('.turn-front');
+  const backFace = leaf.querySelector('.turn-back');
+  const updateFaces = () => {
+    if (!leaf.isConnected) return;
+    const progress = animation.effect.getComputedTiming().progress ?? 0;
+    const frontVisible = backward ? progress >= 0.5 : progress < 0.5;
+    frontFace.style.visibility = frontVisible ? 'visible' : 'hidden';
+    backFace.style.visibility = frontVisible ? 'hidden' : 'visible';
+    if (animation.playState === 'running') requestAnimationFrame(updateFaces);
+  };
+  updateFaces();
+  animation.finished.then(finish, finish);
+}
+document.querySelector('#open-letter').addEventListener('click', () => show(letter));
+document.querySelector('#open-button').addEventListener('click', () => show(letter));
+document.querySelector('#back').addEventListener('click', () => show(intro));
+document.querySelector('#reread').addEventListener('click', () => show(plans));
+document.querySelector('#plans-back').addEventListener('click', () => show(letter));
+document.querySelector('#later').addEventListener('click', () => {
+  document.querySelector('#response-note').textContent = "27 November is the plan. Text me and we’ll sort the time ♡";
+});
+document.querySelector('#yes').addEventListener('click', () => {
+  show(plans);
+});
+document.querySelector('#plan-form').addEventListener('submit', event => {
+  event.preventDefault();
+  selectedPlan = new FormData(event.currentTarget).get('plan');
+  selectedOpinion = document.querySelector('#opinion').value.trim();
+  document.querySelector('#chosen-plan').textContent = selectedPlan;
+  document.querySelector('#chosen-opinion').textContent = selectedOpinion;
+  document.querySelector('#copy-status').textContent = 'Your pick is ready. Send it in our chat ♡';
+  show(celebration);
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const container = document.querySelector('#confetti');
+  for (let i = 0; i < 45; i++) {
+    const piece = document.createElement('span');
+    piece.className = 'confetti';
+    piece.textContent = ['♡', '♥', '✧', '✿'][i % 4];
+    piece.style.cssText = `left:${Math.random()*100}%;font-size:${12+Math.random()*20}px;animation-duration:${3+Math.random()*3}s;animation-delay:${Math.random()*.8}s;color:${['#a33255','#d798ae','#c77690'][i%3]}`;
+    container.append(piece);
+    setTimeout(() => piece.remove(), 7000);
+  }
+});
+document.querySelector('#copy').addEventListener('click', async () => {
+  const message = `It's a date ♡ My pick: ${selectedPlan}.${selectedOpinion ? ` My thoughts: ${selectedOpinion}` : ''} See you on Friday, 27 November 2026! Let’s sort the time.`;
+  try {
+    await navigator.clipboard.writeText(message);
+    document.querySelector('#copy-status').textContent = 'Copied! Paste it in our chat ♡';
+  } catch {
+    document.querySelector('#copy-status').textContent = message;
+  }
+});
+
+</script>
+</body></html>
